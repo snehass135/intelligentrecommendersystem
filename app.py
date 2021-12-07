@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import *
-from tkinter import ttk
 import pickle as pk
 import pandas as pd
 
@@ -15,15 +14,16 @@ def values():
     for i in book_list:
         print(i)   
 
-window = tk.Tk()
+window = Tk()
 window.geometry('1080x1080')
+window['bg']="yellow"
 
 Label(text="Book Reccomondation system", font= ("Times New Roman", 20)).grid()
 
 # font = ("Times New Roman", 20))
 
 ttk.Label(window, text = "Select Author to recommend: ", 
-        font = ("Times New Roman", 10)).grid(column = 0, 
+        font = ("Times New Roman", 15)).grid(column = 0,
         row = 15, padx = 10, pady = 25)
 
 n = tk.StringVar()
